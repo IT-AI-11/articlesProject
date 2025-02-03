@@ -1,0 +1,182 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-wrapper {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    order: 5px dotted red;
+}
+.header {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background-color: white;
+    margin-bottom: 50px;
+
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25); 
+box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25);
+
+}
+.header p{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+
+    order: 3px dotted rgb(17, 221, 240);
+}
+.header nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+
+    order: 3px dotted darkblue;
+}
+.header nav li:nth-child(2){
+    color: orange;
+    cursor: pointer;
+}
+.main {
+    ax-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    gap: 10px;
+    ackground-color: rgb(152, 255, 152);
+}
+
+.post-1{
+    position: relative;
+    idth: max-content;
+    max-width: 900px;
+    width: 100%;
+ 
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: center;
+
+    border: 3px dashed chocolate;
+
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding-bottom: 5px;
+}
+
+.example{
+    top: 50%;
+    left: 0;
+    position: absolute;
+    transform: translate(50%, -50%);
+}
+
+post-1::after{
+    content: ""; /* Required for pseudo-elements */
+    display: block; /* Make it a block element */
+    width: 100%; /* Full width */
+    height: 10px; /* Thickness of the line */
+    background-color: #ccc; /* Color of the line */
+    background-color: red;
+    position: absolute; /* Position it absolutely */
+    bottom: 0; /* Align it to the bottom of the block */
+    left: 0; /* Align it to the left */ 
+}
+
+hr-blogs-divider{
+    max-width: 1000px;
+    width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+    height: 1px !important;
+    background-color: grey;
+    order: none;
+    border-radius: 20px;
+}
+
+
+.post-1-left-text-wrapper {
+    max-width: 900px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    lign-items: center;
+
+    order: 3px dashed darkcyan;
+}
+.post-1-left-text-wrapper a{
+    text-decoration: none;
+    font-size: 25px;
+    color: inherit;
+}
+.post-1-left-text-wrapper .a-3{
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+}
+.post-1-left-text-wrapper a:hover{
+    text-decoration: underline;
+
+}
+.text-lorem-ipsum {
+    ax-width: 700px;
+    idth: 100%;
+    ax-width: calc(150ch);
+    verflow: hidden;
+    hite-space: nowrap;
+    ext-overflow: ellipsis;
+
+    margin: 5px 0px;
+
+
+    
+    max-width: 600px; /* Set a width for the card */
+    width: 100%;
+    rder: 1px solid #ccc; /* Add a border */
+    adding: 16px; /* Add some padding */
+    border-radius: 8px; /* Round the corners */
+    overflow: hidden; /* Hide overflow */
+    display: -webkit-box; /* For Safari */
+    -webkit-box-orient: vertical; /* For Safari */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    ine-clamp: 3; /* Limit to 3 lines (not widely supported) */
+}
+.post-1-right-image-wrapper {
+    ackground-image: url('  https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D   ');
+    height: 100px;
+    width: 150px;
+
+    order: 3px dashed grey;
+}
+.post-1-right-image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p span {
+    color: green;
+}
+
+.date{
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+    color: grey;
+}
+
+.footer {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+}
